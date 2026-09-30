@@ -1,0 +1,35 @@
+/* Shared by all public documents. No external fonts or dependencies. */
+:root { color-scheme: light; --ink: #24303b; --muted: #52606b; --link: #185b96; --line: #dce2e7; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fafbfc; color: var(--ink); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1rem; line-height: 1.7; overflow-wrap: anywhere; }
+.container { width: min(100% - 2.5rem, 52rem); margin-inline: auto; }
+a { color: var(--link); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; border-radius: 2px; }
+.site-header { background: #fff; border-bottom: 1px solid var(--line); }
+.site-header .container { padding-block: 1.25rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .8rem 2rem; }
+.site-name { font-size: 1.1rem; font-weight: 700; color: var(--ink); text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+nav a { display: inline-block; padding-block: .35rem; }
+nav a[aria-current="page"] { font-weight: 700; text-decoration-thickness: 2px; }
+main { padding-block: 2.5rem 3rem; min-height: 65vh; }
+h1, h2, h3 { line-height: 1.3; }
+h1 { margin: 0 0 1rem; font-size: clamp(1.9rem, 5vw, 2.5rem); letter-spacing: -.025em; }
+h2 { font-size: 1.35rem; margin-top: 2.25rem; }
+h3 { font-size: 1.05rem; margin: 0 0 .25rem; }
+p { margin: 0 0 1.2rem; }
+.lead { font-size: 1.1rem; color: var(--muted); }
+.notice, .todo { border-left: 3px solid #9a752a; background: #f8f3e8; padding: 1rem 1.15rem; }
+.game-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; list-style: none; padding: 0; }
+.game-list li { padding-block: 1.15rem; border-bottom: 1px solid var(--line); }
+.status { font-size: .8rem; color: var(--muted); margin-left: .6rem; }
+.document-list { padding-left: 1.5rem; }
+.document-list li { padding-block: .5rem; }
+.eyebrow, .breadcrumb { color: var(--muted); }
+.eyebrow { font-weight: 600; margin-bottom: .35rem; }
+.breadcrumb { font-size: .9rem; margin-bottom: 2rem; }
+.site-footer { border-top: 1px solid var(--line); padding-block: 1.5rem; color: var(--muted); font-size: .9rem; }
+.skip-link { position: absolute; left: 1rem; top: -8rem; background: #fff; padding: .75rem 1rem; z-index: 1; }
+.skip-link:focus { top: .5rem; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 540px) { .game-list { grid-template-columns: 1fr; } main { padding-top: 2rem; } .site-header .container { align-items: flex-start; flex-direction: column; } }
