@@ -25,7 +25,10 @@ game-pages/
 │   ├── depot/index.html
 │   ├── animalstore/index.html
 │   ├── retrosaga/index.html
-│   └── ast/index.html
+│   ├── ast/index.html
+│   └── catbox/
+│       ├── index.html        # 고양이는 액체다 개인정보처리방침 (한국어)
+│       └── en/index.html     # Cats Are Liquid Privacy Policy (English)
 ├── support/index.html        # 공통 지원 안내
 ├── terms/index.html          # 향후 약관용 예약 페이지
 ├── assets/css/site.css       # 모든 페이지의 공통 스타일
@@ -33,7 +36,22 @@ game-pages/
 └── README.md
 ```
 
-각 개인정보처리방침은 동일한 초기 템플릿을 사용하지만 독립된 파일입니다. 한 게임의 확인된 사실을 다른 게임에 자동으로 적용하지 않습니다. 향후 게임별 지원 문서는 `support/<game-id>/index.html`, 기타 문서는 별도 디렉터리로 추가할 수 있습니다.
+게임별 개인정보처리방침은 독립된 파일입니다. 기존 아홉 게임은 동일한 초기 초안 템플릿을 사용하며, catbox는 게임 내 확정 문서를 바탕으로 작성했습니다. 한 게임의 확인된 사실을 다른 게임에 자동으로 적용하지 않습니다. 향후 게임별 지원 문서는 `support/<game-id>/index.html`, 기타 문서는 별도 디렉터리로 추가할 수 있습니다.
+
+## Catbox privacy policy
+
+고양이는 액체다(Cats Are Liquid)의 공개 개인정보처리방침입니다.
+
+- 한국어: https://sodamania1.github.io/game-pages/privacy/catbox/
+- English: https://sodamania1.github.io/game-pages/privacy/catbox/en/
+- 작성일: 2026년 9월 30일
+- 시행일: 2026년 11월 1일
+- 원본: `sodamania1/catbox` 저장소의 `legal/privacy.html`, `legal/privacy.en.html`
+- 반영한 원본 커밋: `a0f036bea07f9514e6eeb3169cd6d3e649e664bd`
+
+두 언어의 본문과 날짜, 개발자명 및 개인정보 문의 이메일은 원본 확정 문서를 유지합니다. 공통 CSS, 사이트 탐색, 언어 전환과 언어별 메타데이터만 공개 사이트 형식에 맞췄습니다. 한국어 페이지를 기본 URL로 사용하며 영어 페이지와 서로 연결합니다.
+
+문서 변경 시 게임 내 두 원본과 공개 페이지의 본문·날짜를 함께 맞추고 위 원본 커밋을 갱신합니다. 게임 구현이 바뀌면 원본에서 먼저 해당 사실을 확인합니다. `main`에 커밋하고 푸시하여 Pages 배포를 마친 뒤 공개 URL을 Play Console에 등록합니다.
 
 ## Local editing
 
@@ -76,7 +94,7 @@ python3 -m http.server 8000
 
 ## Important
 
-현재 모든 개인정보처리방침은 **확인 전 초안**입니다. 실제 정책으로 제출하기 전에 실제 게임 구현, 권한, SDK, 광고·분석·서버 서비스를 조사하고 TODO를 해결해야 합니다. 수집이 없다는 주장도 검증 없이 작성하지 않습니다. 공개 이메일, 회사명 또는 개인 이름을 추측하여 추가하지 않습니다.
+catbox 이외의 기존 아홉 게임 개인정보처리방침은 **확인 전 초안**입니다. 실제 정책으로 제출하기 전에 실제 게임 구현, 권한, SDK, 광고·분석·서버 서비스를 조사하고 TODO를 해결해야 합니다. 수집이 없다는 주장도 검증 없이 작성하지 않습니다. 공개 이메일, 회사명 또는 개인 이름을 추측하여 추가하지 않습니다.
 
 게임별 확인 항목:
 
