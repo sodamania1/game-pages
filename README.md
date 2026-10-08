@@ -33,6 +33,8 @@ game-pages/
 ├── terms/index.html          # 향후 약관용 예약 페이지
 ├── assets/css/site.css       # 모든 페이지의 공통 스타일
 ├── 404.html
+├── AGENTS.md                 # 프로젝트 작업 지침
+├── docs/                     # 계약·인계·표준·작업 기록
 └── README.md
 ```
 
@@ -108,3 +110,14 @@ catbox 이외의 기존 아홉 게임 개인정보처리방침은 **확인 전 �
 - 개인정보 문의 및 관련 요청을 받을 공개 연락처
 
 공통 `support/index.html`에도 실제 공개 지원 채널을 추가해야 합니다. 이용약관은 아직 게시하지 않았으며 `terms/index.html`은 예약 페이지입니다.
+
+## Working documents
+
+작업 기록 공통 표준 `work-history` 버전 `1.0`을 채택합니다. 새 대화나 다른 PC에서 이어받을 때 [현재 인계 상태](docs/handoff.md)와 현재 Git 상태를 먼저 확인합니다.
+
+- [AGENTS.md](AGENTS.md): 프로젝트 작업 흐름과 범위
+- [사이트 계약](docs/site-contract.md): 현재 구현이 지켜야 할 약속과 표준 출처
+- [작업 기록 표준](docs/work-history-standard.md): 중앙 원문 그대로 보관한 배포본
+- [작업 기록 색인](docs/history/INDEX.md): 과거 판단 근거가 필요할 때 관련 기록만 선택해서 읽기
+
+현행 지침과 과거 기록을 구분합니다. `docs/`에는 공개 가능한 요약만 기록하며 대화 전문·개인 경로·인증정보를 넣지 않습니다. 기록 규칙 자체는 커밋·푸시 권한을 부여하지 않습니다.
